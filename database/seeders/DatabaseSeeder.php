@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Santri::factory(10)->create();
+        Santri::factory(20)->create();
 
         $password = Hash::make("pengurus123");
         Pengurus::create([

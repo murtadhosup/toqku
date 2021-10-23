@@ -66,6 +66,20 @@
         </div>
       </section>
     <!-- header end -->
+    <div class="row">
+      @foreach($data as $row)
+        <div class="col-lg-4 mb-2">
+          <div class="card">
+          <div class="card-body">
+            <p>Judul Buku   :{{$row['buku']}}</p>
+            <p>Keterangan   :{{$row['keterangan']}}</p>
+            <p>Penulis      :{{$row['penulis']}}</p>
+            <p>Tahun Terbit :{{$row['tahun_terbit']}}</p>
+          </div>
+          </div>
+        </div>
+        @endforeach
+    </div>
     <!-- footer  -->
         <footer>
           <div class="container">

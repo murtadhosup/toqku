@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Buku;
 
 // panggil controller agar bisa digunakan pada route
 // controller dipanggil sesuai nama dan lokasi filenya
@@ -25,6 +26,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/buku', function () {
+    $buku = Buku::all();
+    return view('buku',['data'=>$buku]);
+});
 
 Route::get('/login', function () {
     return view('/dashboard/login');
