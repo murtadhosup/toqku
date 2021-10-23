@@ -51,9 +51,8 @@
 
     <!-- header -->
         <div class="row">
-            <h1>
-              Data Santri
-            </h1>
+          <hr>
+          <h2 style="text-align: center">Data Santri</h2>
         </div>
     <!-- header end -->
     <div class="row">

@@ -51,9 +51,8 @@
 
     <!-- header -->
         <div class="row">
-            <h1>
-              Data Buku
-            </h1>
+          <hr>
+          <h2 style="text-align: center">Data Buku</h2>
         </div>
     <!-- header end -->
     <div class="row">

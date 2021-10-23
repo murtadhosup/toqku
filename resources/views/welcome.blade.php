@@ -48,7 +48,7 @@
         </div>
       </nav>
     <!-- navbar end -->
-
+<hr>
     <!-- header -->
     <section class="container">
         <div class="row header-component">

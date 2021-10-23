@@ -55,7 +55,7 @@
                                 <tr>
                                     <th>Nama Pengurus</th>
                                     <th>Gender</th>
-                                    <th>No P</th>
+                                    <th>No HP</th>
                                     <th>Email</th>
                                     <th>Status Aktif</th>
                                     <th>Aksi</th>
