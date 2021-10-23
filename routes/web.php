@@ -25,6 +25,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/login', function () {
+    return view('/dashboard/login');
+});
 Route::get('/dashboard/login', [LoginController::class, 'index'])->name('login');
 Route::post('/dashboard/login/authenticate', [LoginController::class, 'authenticate']);
 
