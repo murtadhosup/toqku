@@ -39,7 +39,7 @@
                 <a class="nav-link" href="/pengurus">Pengurus</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/buku">Buku</a>
+                <a class="nav-link active" aria-current="page" href="/buku">Buku</a>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/login">Login</a>
               </li>

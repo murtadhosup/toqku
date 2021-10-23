@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Seeder;
 use App\Models\Santri;
 use App\Models\Pengurus;
+use App\Models\Buku;
 
 
 class DatabaseSeeder extends Seeder
@@ -29,5 +30,7 @@ class DatabaseSeeder extends Seeder
             "aktif"=>"Aktif"
 
         ]);
+        Buku::factory(20)->create();
+
     }
 }
