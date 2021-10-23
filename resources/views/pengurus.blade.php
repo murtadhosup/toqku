@@ -30,13 +30,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/santri">Santri</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pengurus">Pengurus</a>
+                <a class="nav-link active" aria-current="page" href="/pengurus">Pengurus</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/buku">Buku</a>
@@ -50,22 +50,27 @@
     <!-- navbar end -->
 
     <!-- header -->
-    <section class="container">
-        <div class="row header-component">
-          <section class="col-lg-6">
+        <div class="row">
             <h1>
-              Belajar di TPQ dengan modern
+              Data Pengurus
             </h1>
-            <p>
-              TPQ Digital merupakan website yang digunakan untuk mencatat semua aktivitas kemajuan santri
-            </p>
-          </section>
-          <section class="col-lg-6">
-            <img src="./images/29578.jpg" alt="" class="img-fluid">
-          </section>
         </div>
-      </section>
     <!-- header end -->
+    <div class="row">
+      @foreach($data as $row)
+        <div class="col-lg-4 mb-2">
+          <div class="card">
+          <div class="card-body">
+            <p>Nama pengurus   :  {{$row['nama_pengurus']}}</p>
+            <p>Jenis kelamin   :  {{$row['gender']}}</p>
+            <p>No HP      :  {{$row['hp']}}</p>
+            <p>Email :  {{$row['email']}}</p>
+            <p>Status :  {{$row['aktif']}}</p>
+          </div>
+          </div>
+        </div>
+        @endforeach
+    </div>
     <!-- footer  -->
         <footer>
           <div class="container">

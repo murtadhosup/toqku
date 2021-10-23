@@ -39,9 +39,9 @@
                 <a class="nav-link" href="/pengurus">Pengurus</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/buku">Buku</a>
+                <a class="nav-link active" aria-current="page" href="/buku">Buku</a>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/login">Login</a>
+                <a class="nav-link" href="/login">Login</a>
               </li>
             </ul>
           </div>
@@ -50,31 +50,21 @@
     <!-- navbar end -->
 
     <!-- header -->
-    <section class="container">
-        <div class="row header-component">
-          <section class="col-lg-6">
+        <div class="row">
             <h1>
-              Belajar di TPQ dengan modern
+              Data Buku
             </h1>
-            <p>
-              TPQ Digital merupakan website yang digunakan untuk mencatat semua aktivitas kemajuan santri
-            </p>
-          </section>
-          <section class="col-lg-6">
-            <img src="./images/29578.jpg" alt="" class="img-fluid">
-          </section>
         </div>
-      </section>
     <!-- header end -->
     <div class="row">
       @foreach($data as $row)
         <div class="col-lg-4 mb-2">
           <div class="card">
           <div class="card-body">
-            <p>Judul Buku   :{{$row['buku']}}</p>
-            <p>Keterangan   :{{$row['keterangan']}}</p>
-            <p>Penulis      :{{$row['penulis']}}</p>
-            <p>Tahun Terbit :{{$row['tahun_terbit']}}</p>
+            <p>Judul Buku   :  {{$row['buku']}}</p>
+            <p>Keterangan   :  {{$row['keterangan']}}</p>
+            <p>Penulis      :  {{$row['penulis']}}</p>
+            <p>Tahun Terbit :  {{$row['tahun_terbit']}}</p>
           </div>
           </div>
         </div>

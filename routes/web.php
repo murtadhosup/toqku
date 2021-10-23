@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Buku;
+use App\Models\Santri;
+use App\Models\Pengurus;
 
 // panggil controller agar bisa digunakan pada route
 // controller dipanggil sesuai nama dan lokasi filenya
@@ -29,6 +31,16 @@ Route::get('/', function () {
 Route::get('/buku', function () {
     $buku = Buku::all();
     return view('buku',['data'=>$buku]);
+});
+
+Route::get('/santri', function () {
+    $santri = Santri::all();
+    return view('santri',['data'=>$santri]);
+});
+
+Route::get('/pengurus', function () {
+    $pengurus = Pengurus::all();
+    return view('pengurus',['data'=>$pengurus]);
 });
 
 Route::get('/login', function () {
