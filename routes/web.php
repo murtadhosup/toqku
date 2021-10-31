@@ -28,6 +28,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::get('/buku', function () {
     $buku = Buku::all();
     return view('buku',['data'=>$buku]);

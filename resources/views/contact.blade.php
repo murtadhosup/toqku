@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,11 +30,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact Us</a>
-                  </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/santri">Santri</a>
@@ -42,7 +40,7 @@
                 <a class="nav-link" href="/pengurus">Pengurus</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/buku">Buku</a>
+                <a class="nav-link active" aria-current="page" href="/buku">Buku</a>
               <li class="nav-item">
                 <a class="nav-link" href="/login">Login</a>
               </li>
@@ -51,25 +49,44 @@
         </div>
       </nav>
     <!-- navbar end -->
-<hr>
+
     <!-- header -->
-    <section class="container">
-        <div class="row header-component">
-          <section class="col-lg-6">
-            <h1>
-              Belajar di TPQ dengan modern
-            </h1>
-            <p>
-              TPQ Digital merupakan website yang digunakan untuk mencatat semua aktivitas kemajuan santri
-            </p>
-          </section>
-          <section class="col-lg-6">
-            <img src="./images/29578.jpg" alt="" class="img-fluid">
-          </section>
+        <div class="row">
+          <hr>
+          <h2 style="text-align: center">CONTACT US</h2>
         </div>
-      </section>
     <!-- header end -->
-    <!-- footer  -->
+    <div class="container">
+        <div id="form-main">
+            <div id="form-div">
+                <form class="montform" id="reused_form" >
+                    <p class="name">
+                        <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+                    </p>
+                    <p class="email">
+                        <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+                    </p>
+                    <p class="text">
+                        <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                    </p>
+                    <div class="submit">
+                        <button type="submit" class="button-blue">SUBMIT</button>
+                        <div class="ease"></div>
+                    </div>
+                </form>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h4>
+                        Error
+                    </h4>
+                    Sorry there was an error sending your form.
+                </div>
+                <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
+            </div>
+        </div>
+    </div>
+
+
+         <!-- footer  -->
         <footer>
           <div class="container">
             <div class="row">
