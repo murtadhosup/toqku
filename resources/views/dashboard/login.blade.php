@@ -110,6 +110,14 @@ span.psw {
        width: 100%;
     }
 }
+
+body{
+    height: 100vh;
+    background-image: url(https://dosenit.com/wp-content/uploads/2020/10/Gunung-Fuji-Jepang-1024x640-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
     </style>
 </head>
 <body>
