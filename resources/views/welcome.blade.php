@@ -45,6 +45,9 @@
                 <a class="nav-link" href="/buku">Buku</a>
               <li class="nav-item">
                 <a class="nav-link" href="/login">Login</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Registration</a>
+
               </li>
             </ul>
           </div>

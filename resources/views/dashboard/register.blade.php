@@ -114,23 +114,32 @@ span.psw {
 </head>
 <body>
 
-<h2 style="text-align: center">Login Form</h2>
+<h2 style="text-align: center">Registrasi Form</h2>
 
 <form method="POST" action="/dashboard/login/authenticate">
 @csrf
-  <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="email" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-
-    <button type="submit">Login</button>
-    <p> Belum punya akun?
-        <a  href="/register">Registrasi di sini</a>
-    </p>
+<div class="container">
+    <h1>Register</h1>
+      <form>
+          <label>Username</label>
+          <br>
+          <input type="text">
+          <br>
+          <label>Email</label>
+          <br>
+          <input type="text">
+          <br>
+          <label>Password</label>
+          <br>
+          <input type="password">
+          <br>
+          <button>Register</button>
+          <p> Sudah punya akun?
+            <a  href="/login">Login di sini</a>
+          </p>
+      </form>
   </div>
-</form>
+
 
 </body>
 </html>
