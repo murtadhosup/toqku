@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Buku;
 use App\Models\Santri;
 use App\Models\Pengurus;
+use App\Models\peran;
+use App\Models\Bab;
 
 // panggil controller agar bisa digunakan pada route
 // controller dipanggil sesuai nama dan lokasi filenya
@@ -11,7 +13,8 @@ use App\Http\Controllers\Dashboard\SantriController;
 use App\Http\Controllers\Dashboard\BukuController;
 use App\Http\Controllers\Dashboard\PengurusController;
 use App\Http\Controllers\Dashboard\LoginController;
-
+use App\Http\Controllers\Dashboard\peranController;
+use App\Http\Controllers\Dashboard\BabController;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,5 +88,19 @@ Route::get('/dashboard/logout', [LoginController::class, 'logout']);
 
 });
 
+//peran
+Route::get('/dashboard/peran',[peranController::class,'index']);
+Route::get('/dashboard/peran/form', [peranController::class, 'showFormTambah']);
+Route::post('/dashboard/peran/tambah', [peranController::class, 'tambah']);
+Route::get('/dashboard/peran/hapus/{id}', [peranController::class, 'hapus']);
+Route::get('/dashboard/peran/form/{id}', [peranController::class, 'showFormUpdate']);
+Route::post('/dashboard/peran/update/{id}', [peranController::class, 'update']);
 
+//Bab
+Route::get('/dashboard/Bab','App\Http\Controllers\Dashboard\BabController@index');
+Route::get('/dashboard/Bab/form', [BabController::class, 'showFormTambah']);
+Route::post('/dashboard/Bab/tambah', [BabController::class, 'tambah']);
+Route::get('/dashboard/Bab/hapus/{id}', [BabController::class, 'hapus']);
+Route::get('/dashboard/Bab/form/{id}', [BabController::class, 'showFormUpdate']);
+Route::post('/dashboard/Bab/update/{id}', [BabController::class, 'update']);
 

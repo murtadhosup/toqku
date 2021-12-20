@@ -3,10 +3,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3"><p>TPQ DIGITAL</p></div>
+                <div class="sidebar-brand-text mx-3"><p>TPQ MUBAROK</p></div>
             </a>
 
             <!-- Divider -->
@@ -42,6 +39,36 @@
                 <i class="fas fa-fw fa-table"></i>
                 <span>Buku</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/Bab">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Bab</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/peran">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Peran</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/detailperan">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Detail Peran</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/Kemajuan">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Kemajuan</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard/detailkemajuan">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Detail Kemajuan</span></a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
